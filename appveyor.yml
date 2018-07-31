@@ -1,3 +1,6 @@
+after_build:
+  - echo after build
+  
 build_script:
   - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/atom/ci/master/build-package.ps1'))
 
